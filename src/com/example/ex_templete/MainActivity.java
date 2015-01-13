@@ -28,7 +28,7 @@ public class MainActivity extends FragmentActivity {
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
 		if (id == R.id.action_settings) {
-
+			System.out.println("员工乙修改了32行");
 			System.out.println("员工乙修改了32行");
 			return true;
 		}
