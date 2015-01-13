@@ -21,6 +21,7 @@ public class MainActivity extends FragmentActivity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		System.out.println("修改了23行");
+		System.out.println("修改了24行");
 		return true;
 	}
 
