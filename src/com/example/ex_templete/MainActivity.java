@@ -28,6 +28,8 @@ public class MainActivity extends FragmentActivity {
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
 		if (id == R.id.action_settings) {
+
+			System.out.println("员工乙修改了31行");
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
