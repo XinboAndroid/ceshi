@@ -11,7 +11,7 @@ public class MainActivity extends FragmentActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		System.out.println("员工甲修改了14行");
+		System.out.println("修改了14行");
 	}
 
 	@Override
