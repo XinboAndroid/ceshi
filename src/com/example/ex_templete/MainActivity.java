@@ -5,8 +5,11 @@ import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Toast;
 
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends FragmentActivity implements OnClickListener{
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -14,6 +17,8 @@ public class MainActivity extends FragmentActivity {
 		setContentView(R.layout.activity_main);
 		Log.e("", "员工甲修改了14行");
 		System.out.println("修改了14行");
+		findViewById(R.id.button1).setOnClickListener(this);
+		
 	}
 
 	@Override
@@ -40,5 +45,18 @@ public class MainActivity extends FragmentActivity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		switch (v.getId()) {
+		case R.id.button1:
+			Toast.makeText(this, "班长真牛！", Toast.LENGTH_SHORT).show();
+			break;
+
+		default:
+			break;
+		}
 	}
 }
